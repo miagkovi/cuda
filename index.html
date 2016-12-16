@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="Cuda Developers Team">
+	<meta name="keywords" content="Branding, Design, Development, Rocket Science">
+	<meta name="author" content="Ievgenii Miagkov">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="styles/main.css">
-	<title>Cuda</title>
+	<!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<title>Cuda | BRANDING, DESIGN, DEVELOPMENT, ROCKET SCIENCE</title>
 </head>
 <body>
 <!--header section-->
@@ -23,18 +31,18 @@
 	</div>
 	</header>
 <!--welcome section-->
-	<section id="welcome">
+	<section class="welcome">
 		<div class="container">
 			<h1>Hi there! We are the new kids on the block and we build awesome websites and mobile apps.</h1>
-			<a href="#WORK"><button class="btn-a">WORK WITH US!</button></a>
+			<button class="btn-a"><a href="#WORK">WORK WITH US!</a></button>
 		</div>
 	</section>
 <!--services section-->
-	<section id="services">
+	<section class="services">
 		<div class="container">
 			<h1>SERVICES WE PROVIDE</h1>
-			<img src="img/line.png" alt="">
-			<p>We are working with individuals and businesses from all over the globe to create awesome websites and applications.</p>
+			<img src="img/Line-services.png" class="line" alt="">
+			<p class="underheader">We are working with individuals and businesses from all over the globe to create awesome websites and applications.</p>
 			<div class="col-1-of-4">
 				<img src="img/Shape-21.png" alt="Flag">
 				<h3>BRANDING</h3>
@@ -58,11 +66,11 @@
 		</div>
 	</section>
 <!--team section-->
-	<section id="team">
+	<section class="team">
 		<div class="container">
 			<h1>MEET OUR BEAUTIFUL TEAM</h1>
-			<img src="img/line.png" alt="">
-			<p>We are a small team of designers and developers, who help brands with big ideas.</p>
+			<img src="img/Line-team.png" class="line" alt="">
+			<p class="underheader">We are a small team of designers and developers, who help brands with big ideas.</p>
 			<div class="col-1-of-4">
 				<img src="img/Base.png" alt="Photo">
 				<h3>ANNE HATHAWAY</h3>
@@ -140,11 +148,11 @@
 		</div>
 	</section>
 <!--skills section-->
-	<section id="skills">
+	<section class="skills">
 		<div class="container">
 			<h1>WE GOT SKILLS!</h1>
-			<img src="img/line.png" alt="">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore at quaerat consequuntur exercitationem unde, vero libero nulla non.</p>
+			<img src="img/Line-skills.png" class="line" alt="">
+			<p class="underheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore at quaerat consequuntur exercitationem unde, vero libero nulla non.</p>
 			<div class="col-1-of-4">
 				<img src="img/Progress3.png" alt="">
 				<span>90%</span>
@@ -168,42 +176,44 @@
 		</div>
 	</section>
 <!--portfolio section-->
-	<section id="portfolio">
+	<section class="portfolio">
 		<div class="container">
 			<h1>OUR PORTFOLIO</h1>
-			<img src="img/line.png" alt="">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore at quaerat consequuntur exercitationem unde, vero libero nulla non.</p>
+			<img src="img/Line-portfolio.png" class="line" alt="">
+			<p class="underheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore at quaerat consequuntur exercitationem unde, vero libero nulla non.</p>
 			<ul>
 				<li><button class="btn-b active" id="projectsAll">ALL</button></li>
 				<li><button class="btn-b" id="projectsWeb">WEB</button></li>
 				<li><button class="btn-b" id="projectsApps">APPS</button></li>
 				<li><button class="btn-b" id="projectsIcons">ICONS</button></li>
 			</ul>
-			<div class="col-1-of-2">
-				<img src="img/1.png" alt="Project">
-				<p>ISOMETRIC PERSPECTIVE MOCK-UP</p>
-			</div>
-			<div class="col-1-of-2">
-				<img src="img/2.png" alt="Project">
-				<p>TIME ZONE APP UI</p>
-			</div>
-			<div class="col-1-of-2">
-				<img src="img/3.png" alt="Project">
-				<p>VIRO MEDIA PLAYERS UI</p>
-			</div>
-			<div class="col-1-of-2">
-				<img src="img/4.png" alt="Project">
-				<p>BLOG/MAGAZINE FLAT UI KIT</p>
-			</div>
-			<button class="btn-a" id="loadProjects">LOAD MORE PROJECTS</button>
+				<div id="ajax_section">
+					<div class="col-1-of-2">
+						<img src="img/1.png" alt="Project">
+						<p>ISOMETRIC PERSPECTIVE MOCK-UP</p>
+					</div>
+					<div class="col-1-of-2">
+						<img src="img/2.png" alt="Project">
+						<p>TIME ZONE APP UI</p>
+					</div>
+					<div class="col-1-of-2">
+						<img src="img/3.png" alt="Project">
+						<p>VIRO MEDIA PLAYERS UI</p>
+					</div>
+					<div class="col-1-of-2">
+						<img src="img/4.png" alt="Project">
+						<p>BLOG/MAGAZINE FLAT UI KIT</p>
+					</div>
+				</div>
+			<button class="btn-a" id="load_more_projects">LOAD MORE PROJECTS</button>
 		</div>
 	</section>
 <!--testimonials section-->
-	<section id="testimonials">
+	<section class="testimonials">
 		<div class="container">
 			<h1>WHAT PEOPLE SAY ABOUT US</h1>
-			<img src="img/line.png" alt="">
-			<p>Our clients love us!</p>
+			<img src="img/Line-testimonials.png" class="line" alt="">
+			<p class="underheader">Our clients love us!</p>
 			<div class="col-1-of-2">
 				<img src="img/Base.png" alt="Photo">
 				<div class="col-in-col">
@@ -239,17 +249,19 @@
 		</div>
 	</section>
 <!--subscribe section-->
-	<section id="subscribe">
+	<section class="subscribe">
 		<div class="container">
 			<h1>GET IN TOUCH</h1>
-			<img src="img/line.png" alt="">
-			<p>1600 Pennsylvania Ave NW, Washingtin, DC 20500, United States of America. Tel: (202)456-1111</p>
+			<img src="img/Line-subscribe.png" class="line" alt="">
+			<p class="underheader">1600 Pennsylvania Ave NW, Washingtin, DC 20500, United States of America. Tel: (202)456-1111</p>
 			<div class="form-container">
-				<input type="text" id="userName">
-				<input type="email" id="userEmail">
-				<input type="text" id="userMessage">
+				<form>
+					<input type="text" id="userName" placeholder="Your Name*" required>
+					<input type="email" id="userEmail" placeholder="Your Email*" required>
+					<textarea id="userMessage" rows="8" placeholder="Your Message*" required></textarea>
+					<input type="submit" value="SEND MESSAGE" class="btn-a" id="sendMessage">
+				</form>
 			</div>
-			<button class="btn-a" id="sendMessage">SEND MESSAGE</button>
 		</div>
 	</section>
 <!--footer section-->
@@ -267,6 +279,7 @@
 		</div>
 	</footer>
 <!--end of markup-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="scripts/app.js"></script>
 </body>
 </html>
